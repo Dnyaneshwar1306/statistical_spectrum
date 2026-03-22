@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos — Statistical Spectrum</title>
+  <meta name="description" content="Watch all Statistical Spectrum tutorials on statistics, data science, R, Python and machine learning." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero">
+    <span class="section-label">Video Library</span>
+    <h1>All <span style="color:var(--gold)">Videos</span></h1>
+    <div class="gold-line"></div>
+    <p>Search and browse the complete collection of tutorials from Statistical Spectrum</p>
+  </div>
+
+  <section>
+    <!-- Search -->
+    <div class="search-wrap">
+      <input type="text" id="videoSearch" placeholder="Search videos — e.g. regression, probability, ggplot2…" />
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-tags">
+      <button class="filter-tag active" data-filter="all">All Topics</button>
+      <button class="filter-tag" data-filter="statistics">Statistics Theory</button>
+      <button class="filter-tag" data-filter="ml">Machine Learning</button>
+      <button class="filter-tag" data-filter="r">R Programming</button>
+      <button class="filter-tag" data-filter="python">Python</button>
+      <button class="filter-tag" data-filter="dataviz">Data Visualization</button>
+    </div>
+
+    <!-- Ad Unit -->
+    <div class="ad-unit">📢 Google AdSense Advertisement — Add your ad code here after AdSense approval</div>
+
+    <div class="videos-grid" id="videosGrid">
+
+      <!-- Statistics Theory -->
+      <div class="video-card" data-category="statistics" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#2a2218)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">📊</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Statistics Theory</div>
+          <div class="video-title">Introduction to Probability Distributions</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="statistics" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#2a2218)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🎯</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Statistics Theory</div>
+          <div class="video-title">Hypothesis Testing — Step by Step Guide</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="statistics" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#2a2218)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🔔</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Statistics Theory</div>
+          <div class="video-title">Central Limit Theorem Explained Visually</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="statistics" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#2a2218)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">📐</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Statistics Theory</div>
+          <div class="video-title">Bayes' Theorem: Intuition and Applications</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="video-card" data-category="ml" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#182018)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🤖</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Machine Learning</div>
+          <div class="video-title">Linear Regression from Scratch in Python</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="ml" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#182018)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🌳</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Machine Learning</div>
+          <div class="video-title">Decision Trees and Random Forests Explained</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="ml" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#182018)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🧠</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Machine Learning</div>
+          <div class="video-title">Understanding Gradient Descent Visually</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <!-- R Programming -->
+      <div class="video-card" data-category="r" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#1a1828)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">📈</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">R Programming</div>
+          <div class="video-title">Data Visualization with ggplot2 — Complete Guide</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="r" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#1a1828)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🔧</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">R Programming</div>
+          <div class="video-title">Data Wrangling with dplyr and tidyr</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="video-card" data-category="python" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#1e1a10)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🐍</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Python</div>
+          <div class="video-title">Pandas for Data Analysis — Beginner to Pro</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="python" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#1e1a10)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">📦</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Python</div>
+          <div class="video-title">NumPy Arrays and Matrix Operations Explained</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+      <!-- Data Viz -->
+      <div class="video-card" data-category="dataviz" onclick="window.open('https://www.youtube.com/@statisticalspectrum','_blank')">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a1a,#201418)">
+          <div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem">🎨</div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-category">Data Visualization</div>
+          <div class="video-title">Choosing the Right Chart for Your Data</div>
+          <div class="video-meta">Statistical Spectrum</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:3rem;text-align:center">
+      <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-gold">▶ &nbsp;View All on YouTube</a>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-unit" style="margin-top:3rem">📢 Google AdSense Advertisement — Add your ad code here</div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

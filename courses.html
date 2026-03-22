@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses & Resources — Statistical Spectrum</title>
+  <meta name="description" content="Free and structured courses on statistics, data science, ML, R and Python by Dnyaneshwar Darekar." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .roadmap {
+      max-width: 700px; margin: 0 auto 4rem;
+      position: relative;
+    }
+    .roadmap::before {
+      content: '';
+      position: absolute; left: 30px; top: 0; bottom: 0;
+      width: 1px; background: linear-gradient(transparent, var(--gold), transparent);
+    }
+    .roadmap-item {
+      display: flex; gap: 2rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .roadmap-dot {
+      width: 60px; height: 60px; flex-shrink: 0;
+      background: var(--dark2);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; position: relative; z-index: 2;
+    }
+    .roadmap-content {
+      background: var(--dark2);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 4px; padding: 1.5rem;
+      flex: 1; transition: all 0.3s ease;
+    }
+    .roadmap-content:hover { border-color: rgba(201,168,76,0.4); }
+    .roadmap-level {
+      font-family: var(--font-ui);
+      font-size: 0.65rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+    .roadmap-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem; color: var(--white); margin-bottom: 0.5rem;
+    }
+    .roadmap-desc { color: var(--gray); font-size: 0.9rem; font-weight: 300; }
+    .roadmap-topics {
+      display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;
+    }
+    .topic-tag {
+      font-family: var(--font-ui); font-size: 0.65rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 2px; color: var(--gold-light);
+    }
+    .resource-card {
+      background: var(--dark2);
+      border: 1px solid rgba(201,168,76,0.1);
+      border-radius: 4px; padding: 1.5rem;
+      transition: all 0.3s ease;
+      display: flex; gap: 1.2rem; align-items: flex-start;
+    }
+    .resource-card:hover { border-color: rgba(201,168,76,0.35); transform: translateY(-3px); }
+    .resource-icon {
+      font-size: 2rem; flex-shrink: 0;
+      width: 56px; height: 56px;
+      background: rgba(201,168,76,0.08);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem; margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero">
+    <span class="section-label">Learning Resources</span>
+    <h1>Courses & <span style="color:var(--gold)">Resources</span></h1>
+    <div class="gold-line"></div>
+    <p>Structured learning paths from complete beginner to advanced practitioner</p>
+  </div>
+
+  <section>
+
+    <!-- Ad Unit -->
+    <div class="ad-unit">📢 Google AdSense Advertisement — Add your ad code here after approval</div>
+
+    <!-- Learning Roadmap -->
+    <div class="section-header">
+      <span class="section-label">Structured Path</span>
+      <h2>Your Learning <span style="color:var(--gold)">Roadmap</span></h2>
+      <div class="gold-line"></div>
+      <p>Follow this path from fundamentals to advanced topics</p>
+    </div>
+
+    <div class="roadmap">
+
+      <div class="roadmap-item">
+        <div class="roadmap-dot">1️⃣</div>
+        <div class="roadmap-content">
+          <div class="roadmap-level">Stage 1 · Beginner</div>
+          <div class="roadmap-title">Statistics Fundamentals</div>
+          <div class="roadmap-desc">Build a rock-solid foundation with descriptive statistics, probability and distributions.</div>
+          <div class="roadmap-topics">
+            <span class="topic-tag">Descriptive Stats</span>
+            <span class="topic-tag">Probability</span>
+            <span class="topic-tag">Distributions</span>
+            <span class="topic-tag">Central Tendency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-dot">2️⃣</div>
+        <div class="roadmap-content">
+          <div class="roadmap-level">Stage 2 · Beginner–Intermediate</div>
+          <div class="roadmap-title">Inferential Statistics</div>
+          <div class="roadmap-desc">Learn to make conclusions from data using hypothesis testing, confidence intervals and ANOVA.</div>
+          <div class="roadmap-topics">
+            <span class="topic-tag">Hypothesis Testing</span>
+            <span class="topic-tag">Confidence Intervals</span>
+            <span class="topic-tag">t-test</span>
+            <span class="topic-tag">ANOVA</span>
+            <span class="topic-tag">Chi-Square</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-dot">3️⃣</div>
+        <div class="roadmap-content">
+          <div class="roadmap-level">Stage 3 · Intermediate</div>
+          <div class="roadmap-title">Python or R for Statistics</div>
+          <div class="roadmap-desc">Apply your stats knowledge programmatically using Python (pandas, scipy) or R (tidyverse).</div>
+          <div class="roadmap-topics">
+            <span class="topic-tag">Pandas</span>
+            <span class="topic-tag">NumPy</span>
+            <span class="topic-tag">R tidyverse</span>
+            <span class="topic-tag">ggplot2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-dot">4️⃣</div>
+        <div class="roadmap-content">
+          <div class="roadmap-level">Stage 4 · Intermediate–Advanced</div>
+          <div class="roadmap-title">Regression & Predictive Modeling</div>
+          <div class="roadmap-desc">Master linear, logistic and polynomial regression with proper evaluation metrics.</div>
+          <div class="roadmap-topics">
+            <span class="topic-tag">Linear Regression</span>
+            <span class="topic-tag">Logistic Regression</span>
+            <span class="topic-tag">Model Evaluation</span>
+            <span class="topic-tag">Cross-validation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-dot">5️⃣</div>
+        <div class="roadmap-content">
+          <div class="roadmap-level">Stage 5 · Advanced</div>
+          <div class="roadmap-title">Machine Learning A–Z</div>
+          <div class="roadmap-desc">Classification, clustering, ensemble methods, gradient boosting and neural network basics.</div>
+          <div class="roadmap-topics">
+            <span class="topic-tag">Random Forests</span>
+            <span class="topic-tag">XGBoost</span>
+            <span class="topic-tag">K-Means</span>
+            <span class="topic-tag">Neural Networks</span>
+            <span class="topic-tag">Feature Engineering</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Free Resources -->
+    <div class="section-header">
+      <span class="section-label">Free Downloads</span>
+      <h2>Free <span style="color:var(--gold)">Resources</span></h2>
+      <div class="gold-line"></div>
+      <p>Cheatsheets, notes and reference guides — all free</p>
+    </div>
+
+    <div class="resource-grid">
+      <div class="resource-card">
+        <div class="resource-icon">📋</div>
+        <div>
+          <div class="roadmap-title" style="font-size:1rem">Statistics Cheatsheet</div>
+          <div class="roadmap-desc" style="font-size:0.85rem;margin-bottom:0.8rem">All key formulas and concepts in one page.</div>
+          <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-outline" style="padding:0.4rem 0.9rem;font-size:0.7rem">Download Free →</a>
+        </div>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon">🐍</div>
+        <div>
+          <div class="roadmap-title" style="font-size:1rem">Python for Data Science Cheatsheet</div>
+          <div class="roadmap-desc" style="font-size:0.85rem;margin-bottom:0.8rem">Pandas, NumPy and Matplotlib quick reference.</div>
+          <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-outline" style="padding:0.4rem 0.9rem;font-size:0.7rem">Download Free →</a>
+        </div>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon">📈</div>
+        <div>
+          <div class="roadmap-title" style="font-size:1rem">R & ggplot2 Reference Guide</div>
+          <div class="roadmap-desc" style="font-size:0.85rem;margin-bottom:0.8rem">The most useful R functions and ggplot2 layers.</div>
+          <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-outline" style="padding:0.4rem 0.9rem;font-size:0.7rem">Download Free →</a>
+        </div>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon">🤖</div>
+        <div>
+          <div class="roadmap-title" style="font-size:1rem">ML Algorithms Summary</div>
+          <div class="roadmap-desc" style="font-size:0.85rem;margin-bottom:0.8rem">When to use which algorithm — decision guide.</div>
+          <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-outline" style="padding:0.4rem 0.9rem;font-size:0.7rem">Download Free →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-unit">📢 Google AdSense Advertisement — Add your ad code here</div>
+
+    <!-- YouTube CTA -->
+    <div class="newsletter-section" style="margin-top:2rem">
+      <span class="section-label">Watch & Learn</span>
+      <h2>All Tutorials on <span style="color:var(--gold)">YouTube</span></h2>
+      <div class="gold-line"></div>
+      <p>Subscribe to get notified of new tutorials — completely free.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+        <a href="https://www.youtube.com/@statisticalspectrum" target="_blank" class="btn btn-gold">▶ &nbsp;Subscribe on YouTube</a>
+        <a href="videos.html" class="btn btn-outline">Browse Video Library</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
